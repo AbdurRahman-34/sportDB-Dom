@@ -6,12 +6,9 @@ body {
   padding: 40px 0px;
   text-align: center;
 }
-
-h1 {
-  color: #FF9950;
-
-}
-h2{
-  color: #fff;
-  font-size: 25px;
+.detils-area {
+  background-color: #59178580;
+  padding: 50px 0px;
+  border: 8px solid #ededed70;
+  border-radius: 50px;
 }

@@ -14,23 +14,33 @@
 <body>
   <div class="header">
     <img src="logo.svg" alt="">
-    <h1 class="pt-5">WELCOME TO SPORTDB</h1>
+    <h1 class="pt-5 text-white">WELCOME TO SPORTDB</h1>
   </div>
 
   <!-- main container  -->
   <div class="container w-100 m-auto mt-5">
     <div class="row w-100 m-auto">
-      <div class="col-md-6 m-auto text-center">
-        <h2>Search your favorite player</h2>
+      <div class="col-md-6 text-center">
+        <h2 class="text-white">Search your favorite player</h2>
+
+        <!-- input area  -->
         <div class="input-group mb-3 mt-5">
           <input id="search-box" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
           <div class="input-group-append">
             <span onclick="allPlayers()" class="input-group-text" id="search-btn">Search</span>
           </div>
         </div>
+
+          <!-- player container  -->
+      <div id="player-conatiner" class="player-container">
       </div>
-      <div class="col-md-6 m-auto text-center">
-        <h2>welcome right site</h2>
+
+      </div>
+      <div class="col-md-6 text-center">
+        <h2 class="text-white detail-heading"> DETAILS AREA</h2>
+        <div id="details-container" class="details-container">
+          
+        </div>
       </div>
     </div>
   </div>
