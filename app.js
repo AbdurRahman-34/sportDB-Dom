@@ -1,10 +1,18 @@
 const allPlayers = () => {
+    document.getElementById("player-conatiner").textContent="";
     const searchValue = document.getElementById("search-box").value;
-
     const url = `https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=${searchValue}`
     fetch(url)
     .then(res => res.json())
-    .then(data => showplayerDetails(data.player))
+    .then(data => {
+        if(data.player == null){
+            document.getElementById("sppiner").style.display ="block"
+        }
+        else{
+            showplayerDetails(data.player);
+            document.getElementById("sppiner").style.display ="none" 
+        }
+    })
 }
 
 const showplayerDetails = players => {
@@ -41,6 +49,16 @@ const details = (id) => {
 }
 
 const setDetails = (info) => {
+   console.log(info.strGender)
+
+   if(info.strGender == "Male"){
+       document.getElementById("male").style.display ="block"
+       document.getElementById("female").style.display ="none"
+   }
+   else{
+    document.getElementById("male").style.display ="none"
+    document.getElementById("female").style.display ="block" 
+   }
    document.getElementById("details-container").innerHTML = `
    <div class ="detils-area"> 
    <img class = "w-50" src ="${info.strThumb}" alt ="null image"/>
@@ -49,5 +67,4 @@ const setDetails = (info) => {
    </div>
    
    `
-console.log(info)
 }

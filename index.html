@@ -27,9 +27,13 @@
         <div class="input-group mb-3 mt-5">
           <input id="search-box" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
           <div class="input-group-append">
-            <span onclick="allPlayers()" class="input-group-text" id="search-btn">Search</span>
+            <button onclick="allPlayers()" class="input-group-text" id="search-btn">Search</button>
           </div>
-        </div>
+        </div> 
+
+
+        <!-- sppinar area  -->
+        <img id="sppiner" src="loader.gif" alt="">
 
           <!-- player container  -->
       <div id="player-conatiner" class="player-container">
@@ -38,8 +42,11 @@
       </div>
       <div class="col-md-6 text-center">
         <h2 class="text-white detail-heading"> DETAILS AREA</h2>
+        <div class="image-container w-50 m-auto">
+          <img  id="female" class ="w-100"src="female.jpg" alt="">
+          <img id="male" class ="w-100" src="male.jpg" alt="">
+         </div>
         <div id="details-container" class="details-container">
-          
         </div>
       </div>
     </div>

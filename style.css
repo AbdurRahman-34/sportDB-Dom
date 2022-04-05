@@ -12,3 +12,12 @@ body {
   border: 8px solid #ededed70;
   border-radius: 50px;
 }
+#male{
+  display: none;
+}
+#female{
+  display: none;
+}
+#sppiner{
+  display: none;
+}
